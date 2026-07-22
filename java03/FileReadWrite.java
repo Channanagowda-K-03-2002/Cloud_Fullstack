@@ -28,13 +28,6 @@ public class FileReadWrite {
             writer.write("File read and write example in Java.\n");
             writer.close();
 
-            // Read from the file
-            Scanner scanner = new Scanner(file);
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                System.out.println(line);
-            }
-            scanner.close();
         } catch (IOException e) {
             System.out.println("An error occurred: " + e.getMessage());
         }
